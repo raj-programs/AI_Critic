@@ -1,0 +1,3 @@
+@keyframes pulse { 50% { opacity: .35; transform: scale(.72); } }
+@keyframes check-in { from { opacity: 0; transform: scale(.5); } to { opacity: 1; transform: scale(1); } }
+@keyframes scan-line { from { transform: translateX(0); } to { transform: translateX(440%); } }

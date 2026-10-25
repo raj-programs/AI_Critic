@@ -1,0 +1,20 @@
+:root {
+  --color-background: #090c12;
+  --color-surface: #111722;
+  --color-surface-raised: #161e2b;
+  --color-border: #293548;
+  --color-border-strong: #40516b;
+  --color-text-primary: #edf4ff;
+  --color-text-secondary: #9cabc1;
+  --color-accent: #58c7ff;
+  --color-success: #6fdaa5;
+  --color-warning: #f2bd61;
+  --color-danger: #ff7474;
+  --font-primary: 'Space Grotesk', sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --transition-fast: 160ms ease;
+  --transition-normal: 240ms ease;
+}

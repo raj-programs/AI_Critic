@@ -1,0 +1,125 @@
+.analytics {
+    margin: 32px 0;
+    padding: 26px 0 0;
+    border-top: 1px solid var(--color-border);
+}
+
+.section-heading>p {
+    max-width: 300px;
+    margin: 0;
+    color: var(--color-text-secondary);
+    font-size: 12px;
+    line-height: 1.55;
+    text-align: right;
+}
+
+.chart-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.chart-card {
+    min-width: 0;
+    padding: 18px;
+    border: 1px solid var(--color-border);
+    background: #0e141e;
+}
+
+.chart-card h3 {
+    margin: 0;
+    font-size: 15px;
+    letter-spacing: -.02em;
+}
+
+.chart-card header p {
+    margin: 5px 0 18px;
+    color: var(--color-text-secondary);
+    font-size: 11px;
+}
+
+.chart-bars {
+    display: grid;
+    gap: 10px;
+}
+
+.chart-row {
+    display: grid;
+    grid-template-columns: minmax(68px, .9fr) minmax(48px, 1.6fr) 20px;
+    gap: 8px;
+    align-items: center;
+    color: #b9c8da;
+    font-family: var(--font-mono);
+    font-size: 10px;
+}
+
+.chart-row>span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-transform: uppercase;
+}
+
+.chart-track {
+    height: 6px;
+    overflow: hidden;
+    border-radius: 99px;
+    background: #26354a;
+}
+
+.chart-track i {
+    display: block;
+    height: 100%;
+    min-width: 4px;
+    border-radius: inherit;
+    background: var(--color-accent);
+}
+
+.chart-row b {
+    color: var(--color-text-primary);
+    font-size: 10px;
+    text-align: right;
+}
+
+.chart-critical i {
+    background: var(--color-danger);
+}
+
+.chart-high i {
+    background: #ff9c6a;
+}
+
+.chart-medium i {
+    background: var(--color-warning);
+}
+
+.chart-low i,
+.chart-info i,
+.chart-informational i {
+    background: var(--color-success);
+}
+
+@media (max-width: 840px) {
+    .chart-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+.chart-card:last-child:nth-child(3) {
+    grid-column: span 2;
+}
+
+@media (max-width: 560px) {
+    .section-heading>p {
+        text-align: left;
+    }
+
+    .chart-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .chart-card:last-child:nth-child(3) {
+        grid-column: auto;
+    }
+}

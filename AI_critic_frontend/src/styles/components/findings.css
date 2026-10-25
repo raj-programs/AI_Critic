@@ -1,0 +1,112 @@
+.finding-list {
+    display: grid;
+    gap: 13px;
+}
+
+.finding {
+    --severity: #718199;
+    padding: 20px;
+    border: 1px solid var(--color-border);
+    border-left: 3px solid var(--severity);
+    background: #101722;
+    transition: border-color var(--transition-fast), transform var(--transition-fast), background var(--transition-fast);
+}
+
+.finding:hover {
+    border-color: #536b89;
+    border-left-color: var(--severity);
+    background: #121b28;
+    transform: translateY(-1px);
+}
+
+.severity-critical {
+    --severity: var(--color-danger);
+}
+
+.severity-high {
+    --severity: #ff9c6a;
+}
+
+.severity-medium {
+    --severity: var(--color-warning);
+}
+
+.severity-low {
+    --severity: var(--color-success);
+}
+
+.finding-header {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
+.severity-badge {
+    padding: 4px 6px;
+    border: 1px solid color-mix(in srgb, var(--severity) 48%, transparent);
+    color: var(--severity);
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.finding-category {
+    color: #b4c3d5;
+    font-size: 9px;
+    text-transform: uppercase;
+}
+
+.finding-id {
+    margin-left: auto;
+    color: #7b8ba1;
+    font-size: 9px;
+}
+
+.finding h3 {
+    margin: 16px 0 6px;
+    color: var(--color-text-primary);
+    font-size: 18px;
+    letter-spacing: -.025em;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+}
+
+.element-label {
+    margin: 0 0 17px;
+    color: #d3dfed;
+    font-size: 10px;
+    overflow-wrap: anywhere;
+}
+
+.finding-detail {
+    padding: 12px 0;
+    border-top: 1px solid #26354a;
+}
+
+.finding-detail>span {
+    display: block;
+    color: var(--color-accent);
+    font-size: 10px;
+    text-transform: uppercase;
+}
+
+.finding-detail p {
+    margin: 6px 0 0;
+    color: #bdc9d9;
+    font-size: 13px;
+    line-height: 1.65;
+    white-space: pre-line;
+    overflow-wrap: anywhere;
+}
+
+.finding-detail.recommendation p {
+    color: #d6e9de;
+}
+
+.finding-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding-top: 4px;
+    color: #8292a8;
+    font-size: 9px;
+}
